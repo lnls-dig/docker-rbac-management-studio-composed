@@ -8,6 +8,8 @@ services:
       - "8444:8443"
     depends_on:
       - rbac-management-studio-postgres
+    entrypoint: /wait-for-it.sh
+    command: rbac-management-studio-postgres:5432 -- /opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
     networks:
       - postgres-rbac
 
