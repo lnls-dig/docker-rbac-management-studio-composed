@@ -3,9 +3,9 @@ services:
   rbac-management-studio:
     image: lerwys/docker-rbac-management-studio-wildfly
     ports:
-      - "8081:8080"
-      - "9991:9990"
-      - "8444:8443"
+      - "8082:8080"
+      - "9992:9990"
+      - "8445:8443"
     depends_on:
       - rbac-management-studio-postgres
     entrypoint: /wait-for-it.sh
@@ -16,7 +16,7 @@ services:
   rbac-management-studio-postgres:
     image: lerwys/docker-rbac-management-studio-postgres
     ports:
-      - "5433:5432"
+      - "5434:5432"
     volumes:
       - rbac-management-studio-postgres-volume:/var/lib/postgresql/data
     networks:
