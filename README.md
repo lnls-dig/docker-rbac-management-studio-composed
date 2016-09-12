@@ -1,3 +1,5 @@
+# !! WARNING !! DEPRECATED REPOSITORY. USE NEW REPOSIORY https://github.com/lnls-dig/docker-rbac-composed
+
 # Docker Compose for Wildfly (running RBAC Management Service) + Postgres
 
 ## Running instructions
